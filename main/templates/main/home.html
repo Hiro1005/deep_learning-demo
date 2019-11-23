@@ -1,0 +1,12 @@
+{% extends "main/base.html" %}
+{% block content %}
+<div class="mt-5 text-center">
+  <h1 class="display-1">Deep Learing Demo</h1>
+  <p class="lead">Please upload handwriting number picture, and then press OK.(28*28, Grayscale, JPEG only)</p>
+  <form action="{% url 'upload' %}" method="POST" enctype="multipart/form-data">
+    <input type="file" name="files[]" multiple>
+    <input type="submit" class="btn btn-lg btn-secondary" value="送信">
+    {% csrf_token %}
+  </form>
+</div>
+{% endblock %}
