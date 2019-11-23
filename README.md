@@ -1,2 +1,2 @@
-# deep_learning-demo
+# deep_learning_demo
 Number Pic Judgment Application
